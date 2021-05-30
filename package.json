@@ -22,7 +22,7 @@
   "targets": {
     "main": false,
     "app": {
-      "distDir": "./www",
+      "distDir": "./",
       "publicUrl": "./"
     }
   }

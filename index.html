@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><title>Parcel static site generator template</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="index.6fd1d857.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.0.0/styles/dark.min.css"></head><body> <main> <section class="content"> <h1>Parcel static site generator template</h1> <p>This is a starter project to build a barebones static site generator with Parcel with <code>minimal dependencies</code>.</p> <p>Main bundling package used:</p> <ul> <li>Parcel v2</li> </ul> <p>Markdown parsing:</p> <ul> <li>posthtml-import</li> <li>posthtml-markdownit</li> </ul> <p>Just the essentials 😃</p> <ul> <li>markdown-it-emoji</li> <li>markdown-it-highlightjs (<a href="https://unpkg.com/browse/@highlightjs/cdn-assets@11.0.0/styles/">more styles</a>)</li> </ul> <h3>Launch development environment</h3> <pre><code class="hljs"><span class="hljs-comment"># Install dependencies</span>
+<span class="hljs-attribute">yarn</span>
+<span class="hljs-comment"># Then launch the preview</span>
+yarn dev
+</code></pre> <p>Build command</p> <pre><code class="hljs"><span class="hljs-attribute">yarn dev</span>
+</code></pre> <h3>Add live reload to HTML page</h3> <pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+   <span class="hljs-keyword">if</span> (<span class="hljs-built_in">module</span>.hot) {
+         <span class="hljs-built_in">module</span>.hot.accept(<span class="hljs-function">() =&gt;</span> location.reload());
+   }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre> <h3>Happy building</h3> <p><img src="radar-station.044e16e6.jpg" alt="right"></p> <p>Hey, look, even images are supported nicely. If you set an <code>alt</code> attribute, you can align images.</p> </section> <article class="sidebar"> <h1>Site info</h1> <p>This page is a demo about how to generate a static site with Parcel.</p> <h2>Links</h2> <p><a href="https://github.com/tiborsaas">Project GitHub</a></p> <p><a href="http://">Parcel v2</a></p> </article> </main> <script src="index.44d2d3dc.js"></script> <script></script> </body></html>
