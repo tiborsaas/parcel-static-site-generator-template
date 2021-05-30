@@ -1,0 +1,95 @@
+:root {
+  --top-margin: 3rem;
+}
+
+/**
+ * Generic element styles
+ */
+ body {
+  font-size: 20px;
+  line-height: 28px;
+  background: #636fa4;
+  background: linear-gradient(to bottom right, #636FA4, #E8CBC0);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  min-height: calc(100vh - var(--top-margin));
+}
+
+h1 {
+  line-height: 1em;
+}
+
+pre {
+  font-size: 0.76em;
+}
+
+p code {
+  background: #ffec9a;
+  padding: 0 0.3rem;
+  /* word-break: break-all; */
+}
+
+/**
+ * Layout
+ */
+main {
+  background: #fff;
+  padding: 2rem;
+  max-width: 950px;
+  margin: auto;
+  margin-bottom: 5rem;
+  margin-top: var(--top-margin);
+  display: flex;
+}
+
+  section.content {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    flex: 1 1 78%;
+  }
+
+    section.content li {
+      margin-bottom: .5rem;
+    }
+
+    section.content > ul, section.content > ol {
+      margin-left: 0;
+      margin-bottom: 2rem;
+    }
+
+  article.sidebar {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    flex: 1 1 22%;
+    border-left: 1px solid #d9d9d9;
+    font-size: .9em;
+  }
+
+  main img[alt="right"] {
+    width: 50%;
+    float: right;
+    margin-left: 2rem;
+  }
+  main img[alt="full"] {
+    width: 100%;
+  }
+
+/**
+ * Mobile styles
+ */
+@media (max-width: 690px) {
+  article {
+    float: none;
+    width: inherit;
+    margin-left: 0;
+  }
+  img, video {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+  main {
+    padding: 1rem;
+    margin-top: 0;
+  }
+}

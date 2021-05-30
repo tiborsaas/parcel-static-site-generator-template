@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel static site generator template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet"
+    href="//unpkg.com/@highlightjs/cdn-assets@11.0.0/styles/dark.min.css">
+  </head>
+  <body>
+    <main>
+      <section class="content">
+        <markdown src="./pages/index.md"></markdown>
+      </section>
+      <article class="sidebar">
+        <markdown src="./pages/sidebar.md"></markdown>
+      </article>
+    </main>
+
+    <script src="./index.js"></script>
+    <script>
+      if (module.hot) {
+          module.hot.accept(() => location.reload());
+      }
+    </script>
+  </body>
+</html>
